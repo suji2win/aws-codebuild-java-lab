@@ -1,0 +1,6 @@
+
+Project: CodeCommit Practice Lab
+Team: Cloud Engineering
+Purpose: Git branching and merging
+Environment: AWS Canada Central
+Status: In Progress
