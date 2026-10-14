@@ -1,0 +1,25 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto11
+    commands:
+      - echo "Installing build tools"
+
+  pre_build:
+    commands:
+      - echo "Starting the pre-build phase"
+
+  build:
+    commands:
+      - echo "Running Maven tests and packaging"
+      - mvn test package
+
+  post_build:
+    commands:
+      - echo "Build completed"
+
+artifacts:
+  files:
+    - target/messageUtil-1.0.jar
